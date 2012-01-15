@@ -1,3 +1,14 @@
+body{
+	 background: url("../images/grey-bg.png") repeat scroll;
+}
+
+img {
+	display: block;
+	margin: 200px auto 0;
+}
+
 h1 {
-	color: blue;
+	margin: 0;
+	color: #4f95a9;
+	text-align: center;
 }
