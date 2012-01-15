@@ -1,4 +1,7 @@
 SquilioLaunch::Application.routes.draw do
+  # Setting up root location
+  root :to => "pages#home"
+  
   get "pages/home"
 
   get "pages/pricing"
