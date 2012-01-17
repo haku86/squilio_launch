@@ -2,15 +2,121 @@ body{
 	 background: url("../images/grey-bg.png") repeat scroll;
 }
 
-img {
-	display: block;
-	width: 350px;
-	margin: 200px auto 0;
+/* Header */
+#masthead{
+	margin: 1em 0;
+	overflow: auto;
 }
 
-h1 {
+#logo{
+	float: left;
+}
+
+#logo img{
+	width: 200px;
+}
+
+#tagline{
+	float: left;
+	font-family: 'Permanent Marker', cursive;
+	color: #4f95a9;
+	font-size: 1.5em;
+	padding: 30px 0;
+	margin-left: 100px;
+}
+
+nav#social-media{
+	float: right;
+}
+
+#social-media span, #social-media ul, #social-media li{
+	float: left;
+}
+
+#social-media li{
+	list-style: none;
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+	overflow: auto;
+}
+
+#social-media li a{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url("../images/squilio-social-media.png") no-repeat scroll;
+	text-indent: -9999px;
+}
+
+#social-media #facebook-link{
+	background-position: 0 0;
+}
+
+#social-media #twitter-link{
+	background-position: 0 -40px;
+}
+
+#social-media #blog-link{
+	background-position: 0 -80px;
+}
+
+/* Main */
+img.upcoming{
+	display: block;
+	width: 325px;
+	margin: 150px auto 0;
+}
+
+body h1 {
 	font-family: 'League Script', cursive;
+	font-size: 2.25em;
 	margin: 0;
 	color: #4f95a9;
 	text-align: center;
+}
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
