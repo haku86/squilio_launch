@@ -1,14 +1,10 @@
 SquilioLaunch::Application.routes.draw do
   # Setting up root location
   root :to => "pages#home"
-  
-  get "pages/home"
 
-  get "pages/pricing"
-
-  get "pages/register"
-
-  get "pages/contact"
+  match '/pricing', :to => 'pages#pricing'
+  match '/register', :to => 'pages#register'
+  match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
