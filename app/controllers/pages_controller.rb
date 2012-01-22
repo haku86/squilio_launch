@@ -6,10 +6,6 @@ class PagesController < ApplicationController
     @title = "Price Plans"
   end
 
-  def register
-    @title = "Sign Up"
-  end
-
   def contact
     @title = "Contact Us"
   end

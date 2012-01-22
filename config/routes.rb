@@ -1,10 +1,13 @@
 SquilioLaunch::Application.routes.draw do
+  get "users/signup"
+
   # Setting up root location
   root :to => "pages#home"
-
+  # Pages Controller
   match '/pricing', :to => 'pages#pricing'
-  match '/register', :to => 'pages#register'
   match '/contact', :to => 'pages#contact'
+  # Users Controller
+  match '/signup', :to => 'users#signup'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
